@@ -1,0 +1,27 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="container mt-4">
+    <h1 class="mb-4">{{ title |e }}</h1>
+
+    <h4 class="mb-3">Flight Details</h4>
+
+    <ul class="list-group">
+        {% set doc = frappe.get_doc('Airplane', airplane) %}
+        {% set airline = frappe.get_doc('Airline', doc.airline) %}
+        
+        <li class="list-group-item">
+            <strong>Airline:</strong> {{ airline.name }}
+        </li>
+        <li class="list-group-item">
+            <strong>Route:</strong> {{ source_airport_code }} -> {{ destination_airport_code }}
+        </li>
+        <li class="list-group-item">
+            <strong>Departure:</strong> {{ frappe.utils.format_date(date_of_departure) }} | 
+            <strong>Time:</strong> {{ frappe.utils.format_date(time_of_departure) }} |
+            <strong>Duration:</strong> {{ frappe.utils.format_duration(duration) }}
+        </li>
+    </ul>
+    <a href="/ticket-booking-web-form/new?flight={{name}}" class="btn btn-primary ml-3 mt-2">Book Flight</a>
+</div>
+{% endblock %}
