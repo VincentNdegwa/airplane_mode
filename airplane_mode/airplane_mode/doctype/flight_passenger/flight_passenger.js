@@ -1,8 +1,9 @@
 // Copyright (c) 2024, vincent ndegwa and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Flight Passenger", {
-// 	refresh(frm) {
-
-// 	},
-// });
+frappe.ui.form.on("Flight Passenger", {
+	refresh(frm) {},
+	first_name(frm) {
+		console.log("clicked...");
+	},
+});

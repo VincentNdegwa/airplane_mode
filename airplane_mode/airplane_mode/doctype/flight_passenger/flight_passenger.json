@@ -33,6 +33,8 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Full Name",
    "read_only": 1
   }
@@ -44,7 +46,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2024-08-10 03:23:19.431585",
+ "modified": "2024-08-10 18:25:56.042352",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",
