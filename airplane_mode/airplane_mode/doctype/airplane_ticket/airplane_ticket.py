@@ -17,11 +17,12 @@ class AirplaneTicket(Document):
 				add_on_items.append(add_on.item)
 
 	def before_save(self):
-		total_add_ons= 0
+		total_add_ons = 0
 		if self.add_ons:
 			for add_on in self.add_ons:
-				total_add_ons += add_on.amount
-		self.total_amount = self.flight_price + total_add_ons
+				total_add_ons += float(add_on.amount)
+		self.total_amount = float(self.flight_price) + total_add_ons
+
 	
 	def before_submit(self):
 		if self.status != 'Boarded':
