@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Tickets",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-08-11 12:30:40.695376",
+ "dashboard_name": "Tickets Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-08-11 12:30:40.695376",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Tickets Dashboard",
+ "owner": "Administrator"
+}
