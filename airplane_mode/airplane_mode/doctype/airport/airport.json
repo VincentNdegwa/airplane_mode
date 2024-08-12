@@ -35,7 +35,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-08 18:33:40.388239",
+ "modified": "2024-08-12 15:52:43.993010",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airport",
@@ -53,6 +53,16 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Just A User",
+   "select": 1,
+   "share": 1
   }
  ],
  "sort_field": "creation",

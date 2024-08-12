@@ -20,13 +20,22 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-11 23:43:30.806707",
+ "modified": "2024-08-12 14:48:24.648358",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Business",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1
+  },
   {
    "create": 1,
    "delete": 1,
@@ -35,7 +44,8 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Business Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
